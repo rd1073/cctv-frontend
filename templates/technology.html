@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='technology.css') }}">
+    <title>Technology</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">INTELLIEYE</div>
+        <div class="right">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+     <img class="subway-01-1" src="/static/subway.jpg" alt="subway pic here"/>
+
+
+    <div class="rectangle-1">
+         <button class="rectangle-button" onclick="openVideoTab()">CROWD<br />DETECTION</button>
+         <button class="rectangle-button" onclick="openVideoTabM()">CROWD <br />MANAGEMENT</button>
+
+         <button class="rectangle-button">CRIME<br />PREVENTION</button>
+        <button class="rectangle-button" onclick="openVideoTabWork()">WORK<br /> MONITORING</button>
+ 
+      </div>
+
+      <script>
+        function openVideoTab() {
+            // Define the URL of your Flask video feed route
+            const videoUrl = "/video_feed";
+
+            // Open a new tab and load the video URL
+            const newTab = window.open(videoUrl, "_blank");
+            if (newTab) {
+                newTab.focus();
+            } else {
+                alert("Please enable pop-ups for this website to open the video.");
+            }
+        }
+
+        function openVideoTabM() {
+            // Define the URL of your Flask video feed route
+            const videoUrl = "/dynamic";
+
+            // Open a new tab and load the video URL
+            const newTab = window.open(videoUrl, "_blank");
+            if (newTab) {
+                newTab.focus();
+            } else {
+                alert("Please enable pop-ups for this website to open the video.");
+            }
+        }
+
+        /*function openVideoTabWork() {
+            // Define the URL of your Flask video feed route
+            const videoUrl = "/signals";
+
+            // Open a new tab and load the video URL
+            const newTab = window.open(videoUrl, "_blank");
+            if (newTab) {
+                newTab.focus();
+            } else {
+                alert("Please enable pop-ups for this website to open the video.");
+            }
+        }*/
+        function openVideoTabWork() {
+    // Define the URLs of your Flask video feed routes
+    const videoUrls = ["/signals", "/static"]; // Add your video URLs here
+
+    // Open a new tab
+    const newTab = window.open("", "_blank");
+    if (newTab) {
+        // Create an HTML document for the new tab
+        const doc = newTab.document;
+        doc.write("<html><head><title>Video Page</title></head><body>");
+
+        // Create video elements and load the video URLs
+        videoUrls.forEach((url) => {
+            doc.write(`<video controls autoplay><source src="${url}" type="video/mp4"></video><br>`);
+        });
+
+        doc.write("</body></html>");
+        doc.close();
+        
+        newTab.focus();
+    } else {
+        alert("Please enable pop-ups for this website to open the video.");
+    }
+}
+
+
+
+    </script>
+      
+      <!--
+      <div id="video-container" class="hidden">
+        <video controls autoplay>
+            <source src="{{ url_for('video_feed') }}" type="multipart/x-mixed-replace; boundary=frame">
+            Your browser does not support the video tag.
+        </video>
+        <button id="close-video">Close</button>
+    </div>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const crowdManagementButton = document.querySelector("#crowd-management-button");
+            const videoContainer = document.querySelector("#video-container");
+            const closeVideoButton = document.querySelector("#close-video");
+    
+            crowdManagementButton.addEventListener("click", function () {
+                videoContainer.classList.remove("hidden");
+            });
+    
+            closeVideoButton.addEventListener("click", function () {
+                videoContainer.classList.add("hidden");
+            });
+        });
+    </script>
+-->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

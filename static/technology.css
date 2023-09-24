@@ -1,0 +1,117 @@
+/* Navbar.css */
+
+/* Style the entire navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./homebg.png'); /* Background image for the navbar */
+    color: #fff; /* Font color for the text */
+    padding: 30px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the logo on the left */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Style the right-side content */
+.right {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Style the navigation links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Style each navigation item */
+.nav-links li {
+    margin-right: 70px; /* Spacing between navigation items */
+}
+
+/* Style the navigation links (anchors) */
+.nav-links a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent (.navbar) */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Change color of navigation links on hover */
+.nav-links a:hover {
+    color: #f00; /* Red color on hover */
+}
+
+
+
+
+
+.subway-01-1,
+.subway-01-1 * {
+  box-sizing: border-box;
+}
+.subway-01-1 {
+  width: 100vw;
+  height: 370px;
+  position: relative;
+}
+
+
+
+ 
+
+
+  .rectangle-1 {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute buttons evenly along the main axis */
+    align-items: center; /* Center buttons vertically */
+    background: #fafafa;
+    border-radius: 15px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-image: linear-gradient(
+      180deg,
+      rgba(23, 80, 131, 1) 0%,
+      rgba(23, 80, 131, 0) 100%
+    );
+    border-image-slice: 1;
+    width: 1305px;
+    height: 155px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: -60px auto 0; /* Move up (-20px) and center horizontally (auto) */
+    padding: 0 40px; /* Adjust horizontal padding for margin from sides */
+
+
+  
+}
+  
+  .rectangle-button {
+    width: 200px; /* Set the width for each button */
+    height: 100px; /* Set the height for each button */
+    background-color: #fa6c6b;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    margin: 0 5px; /* Adjust the margin to create equal gaps between buttons */
+    font-family: 'Montserrat', sans-serif;
+
+
+  }
+  
+  .rectangle-button:hover {
+    background-color: #05a; /* Change background color on hover */
+  }
+  
+  

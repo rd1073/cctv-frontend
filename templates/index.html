@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>ISOURSE</title>
+    <style>
+        /* Additional custom styles can be added here */
+        body {
+            /*<!-- 
+                background-image: url('../testing.png');--> *//* Replace 'your-image.jpg' with your image file */
+             background-color: rgb(10,52,99);
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-center items-center h-screen">
+    <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-semibold mb-4 text-center">ISOURSE</h1>
+        <div class="space-y-4 flex flex-col items-center">
+
+            
+            <a href="/video_feed">
+            <button class="block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">Live Footage Detection</button>
+            </a>
+            <a href="/dynamic">
+            <button class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full">Dynamic Mapping</button>
+            </a>
+            <a href="/static">
+            <button class="block bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-full">Static Mapping</button>
+            </a>
+            <a href="/thermal">
+            <button class="block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-full">Thermal Mapping</button>
+            </a>
+            
+            <a href="/signals">
+            <button class="block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-full">Signal Detection</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

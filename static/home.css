@@ -1,0 +1,49 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the background image and layout */
+.background-image {
+    background-image: url('path/to/homebg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the left content */
+.left-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.sub-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+/* Styles for the right image */
+.right-content {
+    flex: 1;
+}
+
+.right-image {
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+}
